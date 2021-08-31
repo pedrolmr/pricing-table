@@ -1,0 +1,50 @@
+.container {
+  border: 3px solid red;
+
+  .table {
+    border: 2px solid purple;
+
+    thead {
+      background-color: #f7f7f7;
+      border: 1px solid #d6d6d6;
+      padding: 20px;
+      tr {
+        th:first-child {
+          padding-left: 20px;
+          text-align: left;
+
+          i {
+            margin-right: 15px;
+          }
+        }
+
+        th {
+          width: 20%;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+    }
+
+    tbody {
+      border: 1px solid black;
+      tr {
+        border: 1px solid orange;
+
+        td:first-child {
+          padding-left: 50px;
+          text-align: left;
+        }
+        td {
+          border: 1px solid #d6d6d6;
+          text-align: center;
+          padding: 10px;
+          i {
+            font-size: 25px;
+            color: green;
+          }
+        }
+      }
+    }
+  }
+}
