@@ -1,11 +1,15 @@
 @use "custom";
+
+//abstracts
+@use "abstracts/mixins";
+
 //components
 @use "components/buttons";
-@use "components/mixins";
 
-@use "table.scss";
-@use "header.scss";
-@use "footer.scss";
+//layout
+@use "layout/table.scss";
+@use "layout/header.scss";
+@use "layout/footer.scss";
 
 body {
   padding-top: 50px;
