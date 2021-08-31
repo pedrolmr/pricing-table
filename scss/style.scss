@@ -4,11 +4,9 @@
 @use "components/mixins";
 
 @use "table.scss";
+@use "header.scss";
+@use "footer.scss";
 
 body {
   padding-top: 50px;
-}
-
-.hiddenRow {
-  padding: 0 !important;
 }

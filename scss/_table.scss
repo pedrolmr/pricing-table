@@ -1,9 +1,5 @@
 .container {
-  border: 3px solid red;
-
   .table {
-    border: 2px solid purple;
-
     thead {
       background-color: #f7f7f7;
       border: 1px solid #d6d6d6;
@@ -12,9 +8,14 @@
         th:first-child {
           padding-left: 20px;
           text-align: left;
-
-          i {
-            margin-right: 15px;
+          .bi {
+            &-chevron-down {
+              margin-right: 15px;
+            }
+            &-question-circle {
+              color: #b9d54a;
+              margin-left: 5px;
+            }
           }
         }
 
@@ -28,20 +29,19 @@
 
     tbody {
       border: 1px solid black;
+      transition: 0s;
       tr {
-        border: 1px solid orange;
-
         td:first-child {
           padding-left: 50px;
           text-align: left;
         }
         td {
-          border: 1px solid #d6d6d6;
+          border: 1px solid #ececec;
           text-align: center;
           padding: 10px;
           i {
             font-size: 25px;
-            color: green;
+            color: #b9d54a;
           }
         }
       }

@@ -15,7 +15,39 @@
       <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-body">
-            <table class="table">
+
+            <div class="header">
+
+              <div class="row align-items-start">
+                <div class="col"></div>
+                <div class="col">
+                  <h3>Basic</h3>
+                  <h2>$297</h2>
+                  <p>billed yearly</p>
+
+                  <button type="button" class="btn btn-primary btn-lg">Buy Basic</button>
+                </div>
+                
+                <div class="col">
+             
+                  <h3>Business</h3>
+                  <h2>$697</h2>
+                  <p>billed yearly</p>
+
+                  <button type="button" class="btn btn-secondary btn-lg">Buy Business</button>
+                </div>
+
+                <div class="col">
+                  <h3>Pro</h3>
+                  <h2>$997</h2>
+                  <p>billed yearly</p>
+
+                  <button type="button" class="btn btn-success btn-lg">Buy Pro</button>
+                </div>
+              </div>
+            </div>
+
+            <table class="table" id="accordionTable">
               <thead>
                 <tr></tr>
                   <th>
@@ -23,10 +55,11 @@
                       class="bi bi-chevron-down"
                       data-bs-toggle="collapse"
                       data-bs-target="#demo1"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="demo1"
                     ></i
                     >General
+                    <i class="bi bi-question-circle"></i>
                   </th>
                   <th>Yes</th>
                   <th>Yes</th>
@@ -34,7 +67,68 @@
                 </tr>
               </thead>
 
-              <tbody class="accordian-body collapse" id="demo1">
+              <!--TABLE 1-->
+              <tbody id="demo1" class="accordion-collapse collapse show" data-bs-parent="#accordionTable" >
+                <tr>
+                  <td>Number of sites</td>
+                  <td>1</td>
+                  <td>5</td>
+                  <td>15</td>
+                </tr>
+
+                <tr>
+                  <td>Media manager</td>
+                  <td><i class="bi bi-check2"></i></td>
+                  <td><i class="bi bi-check2"></i></td>
+                  <td><i class="bi bi-check2"></i></td>
+                </tr>
+
+                <tr>
+                  <td>3rd party integrations</td>
+                  <td><i class="bi bi-check2"></i></td>
+                  <td><i class="bi bi-check2"></i></td>
+                  <td><i class="bi bi-check2"></i></td>
+                </tr>
+
+                <tr>
+                  <td>Team members</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td>10</td>
+                </tr>
+
+                <tr>
+                  <td>'Powered by' logo</td>
+                  <td><i class="bi bi-check2"></i></td>
+                  <td><i class="bi bi-check2"></i></td>
+                  <td><i class="bi bi-check2"></i></td>
+                </tr>
+              </tbody>
+
+                <!--END OF TABLE 1-->
+
+
+                <!--TABLE 2-->
+              <thead>
+                <tr></tr>
+                  <th>
+                    <i
+                      class="bi bi-chevron-down"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#demo2"
+                      aria-expanded="false"
+                      aria-controls="demo2"
+                    ></i
+                    >Funnel Builder
+                    <i class="bi bi-question-circle"></i>
+                  </th>
+                  <th>Yes</th>
+                  <th>Yes</th>
+                  <th>Yes</th>
+                </tr>
+              </thead>
+
+              <tbody class="accordion-body collapse" id="demo2" data-bs-parent="#accordionTable">
                 <tr>
                   <td>Number of sites</td>
                   <td>1</td>
@@ -71,6 +165,30 @@
                 </tr>
               </tbody>
             </table>
+            <!--END OF TABLE 2-->
+
+
+
+            <div class="footer">
+              <div class="row align-items-start">
+                <div class="col"></div>
+                <div class="col">
+                  <button type="button" class="btn btn-primary btn-lg">Buy Basic</button>
+                </div>
+                
+                <div class="col">
+                  <button type="button" class="btn btn-secondary btn-lg">Buy Business</button>
+                </div>
+
+                <div class="col">
+                  <button type="button" class="btn btn-success btn-lg">Buy Pro</button>
+                </div>
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
       </div>

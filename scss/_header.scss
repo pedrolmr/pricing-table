@@ -1,0 +1,47 @@
+.header {
+  .row {
+    // border: 1px solid black;
+    margin: 0 1px;
+    .col:first-child {
+      border: none;
+    }
+    .col:nth-child(3):before {
+      content: "BEST VALUE";
+      position: absolute;
+      width: 326px;
+      //   width: calc(45% - 326px);
+      top: 24px;
+      border: 1px solid #a7cb1b;
+      background-color: #a7cb1b;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #fff;
+    }
+    .col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ececec;
+      padding: 3%;
+      h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 3rem;
+        color: #666666;
+      }
+      p {
+        font-size: 0.8rem;
+        color: #666666;
+        margin-bottom: 40px;
+      }
+      button {
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+  }
+}
