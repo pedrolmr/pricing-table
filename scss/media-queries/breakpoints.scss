@@ -1,5 +1,6 @@
 @import "../custom";
 
+//fixes button size and font size
 @include media-breakpoint-down(md) {
   .header {
     .row {
@@ -12,9 +13,7 @@
     }
   }
   .row {
-    // border: 1px solid purple;
     .col {
-      //   border: 1px solid red;
       padding: 0;
       .btn {
         width: 100%;
@@ -24,18 +23,32 @@
   }
 }
 
+//hides the CTA and the content in each column exept the buttons
 @include media-breakpoint-down(sm) {
   .header {
-    display: none;
-    // visibility: hidden;
-  }
-  .btn-business,
-//   .btn-pro {
-//     display: none;
-//   }
+    .row {
+      .col {
+        .btn {
+          font-size: 1.3rem;
+        }
 
-//MAKE THE FOOTER COLS DISAPPEAR ON MOBILE
-.container .footer .row .col {
+        &:nth-child(3)::before {
+          content: "";
+          display: none;
+        }
+
+        h3,
+        h2,
+        p {
+          display: none;
+        }
+        background-color: hotpink;
+      }
+    }
+  }
+
+  //MAKE THE FOOTER COLS DISAPPEAR ON MOBILE EXCEPT FOR THE SECOND COLUMN
+  .container .footer .row .col {
     &:nth-child(1) {
       display: none;
     }
@@ -50,6 +63,31 @@
       display: block;
       .btn {
         font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+//HIDES THE TABLE CONTENT AND THE THEADS ON MOBILE
+@include media-breakpoint-down(sm) {
+  .table {
+    // background-color: greenyellow;
+    thead {
+      th:nth-child(3) {
+        display: none;
+      }
+      th:nth-child(4) {
+        display: none;
+      }
+    }
+    tbody {
+      width: 100%;
+      td {
+        width: 50%;
+      }
+      .business,
+      .pro {
+        display: none;
       }
     }
   }

@@ -66803,30 +66803,56 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 575.98px) {
-  .header {
+  .header .row .col {
+    background-color: hotpink;
+  }
+  .header .row .col .btn {
+    font-size: 1.3rem;
+  }
+  .header .row .col:nth-child(3)::before {
+    content: "";
+    display: none;
+  }
+  .header .row .col h3, .header .row .col .h3,
+.header .row .col h2,
+.header .row .col .h2,
+.header .row .col p {
     display: none;
   }
 
-  .btn-business:nth-child(1),
-.container .footer .row .col:nth-child(1) {
+  .container .footer .row .col:nth-child(1) {
     display: none;
   }
-  .btn-business:nth-child(3),
-.container .footer .row .col:nth-child(3) {
+  .container .footer .row .col:nth-child(3) {
     display: none;
   }
-  .btn-business:nth-child(4),
-.container .footer .row .col:nth-child(4) {
+  .container .footer .row .col:nth-child(4) {
     display: none;
   }
-  .btn-business:nth-child(2),
-.container .footer .row .col:nth-child(2) {
+  .container .footer .row .col:nth-child(2) {
     width: 100%;
     display: block;
   }
-  .btn-business:nth-child(2) .btn,
-.container .footer .row .col:nth-child(2) .btn {
+  .container .footer .row .col:nth-child(2) .btn {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .table thead th:nth-child(3) {
+    display: none;
+  }
+  .table thead th:nth-child(4) {
+    display: none;
+  }
+  .table tbody {
+    width: 100%;
+  }
+  .table tbody td {
+    width: 50%;
+  }
+  .table tbody .business,
+.table tbody .pro {
+    display: none;
   }
 }
 body {
