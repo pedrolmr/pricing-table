@@ -1,0 +1,56 @@
+@import "../custom";
+
+@include media-breakpoint-down(md) {
+  .header {
+    .row {
+      .col {
+        padding: 0;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .row {
+    // border: 1px solid purple;
+    .col {
+      //   border: 1px solid red;
+      padding: 0;
+      .btn {
+        width: 100%;
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header {
+    display: none;
+    // visibility: hidden;
+  }
+  .btn-business,
+//   .btn-pro {
+//     display: none;
+//   }
+
+//MAKE THE FOOTER COLS DISAPPEAR ON MOBILE
+.container .footer .row .col {
+    &:nth-child(1) {
+      display: none;
+    }
+    &:nth-child(3) {
+      display: none;
+    }
+    &:nth-child(4) {
+      display: none;
+    }
+    &:nth-child(2) {
+      width: 100%;
+      display: block;
+      .btn {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

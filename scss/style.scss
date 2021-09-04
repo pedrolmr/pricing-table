@@ -1,16 +1,23 @@
 @use "custom";
 
 //abstracts
+@use "abstracts/variables";
 @use "abstracts/mixins";
 
 //components
 @use "components/buttons";
 
 //layout
-@use "layout/table.scss";
-@use "layout/header.scss";
-@use "layout/footer.scss";
+@use "layout/footer";
+@use "layout/header";
+@use "layout/table";
+
+//media queries
+@use "media-queries/breakpoints.scss";
 
 body {
   padding-top: 50px;
+  .container {
+    padding: 0;
+  }
 }

@@ -1,4 +1,6 @@
+@import "../custom";
 .container {
+  padding: 0;
   .table {
     thead {
       background-color: #f7f7f7;
@@ -11,6 +13,9 @@
           .bi {
             &-chevron-down {
               margin-right: 15px;
+              // overflow: hidden;
+              transition-duration: 0.8s;
+              transition-property: transform;
             }
             &-question-circle {
               color: #b9d54a;

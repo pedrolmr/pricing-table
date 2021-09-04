@@ -1,6 +1,9 @@
+@import "../custom";
+
+@import "../abstracts/variables";
+
 .header {
   .row {
-    // border: 1px solid black;
     margin: 0 1px;
     .col:first-child {
       border: none;
@@ -8,39 +11,54 @@
     .col:nth-child(3):before {
       content: "BEST VALUE";
       position: absolute;
+      // width: 326px;
+      // max-width: 17%;
       width: 326px;
-      //   width: calc(45% - 326px);
+      max-width: 21%;
+      // min-width: 22.5%;
+      // min-width: 133.281px;
       top: 24px;
-      border: 1px solid #a7cb1b;
-      background-color: #a7cb1b;
+      border: 1px solid $lemon;
+      background-color: $lemon;
       text-align: center;
       text-transform: uppercase;
       font-weight: bold;
-      color: #fff;
+      color: $white;
     }
+
+    // .col:nth-child(3) {
+    //   .cta {
+    //     border: 2px solid $lemon;
+    //     width: 100%;
+    //   }
+    // }
     .col {
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 1px solid #ececec;
-      padding: 3%;
+      border: 1px solid $borderColor;
+
+      padding: 3% 0;
+
       h3 {
         font-size: 1.3rem;
         font-weight: bold;
         margin-bottom: 20px;
       }
       h2 {
+        // font-size: 3rem;
         font-size: 3rem;
-        color: #666666;
+        color: $gray;
       }
       p {
         font-size: 0.8rem;
-        color: #666666;
+        color: $gray;
         margin-bottom: 40px;
       }
       button {
         font-weight: bold;
-        color: #fff;
+        color: $white;
+        width: 50%;
       }
     }
   }

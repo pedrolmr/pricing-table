@@ -28,8 +28,7 @@
                   <button type="button" class="btn btn-primary btn-lg">Buy Basic</button>
                 </div>
                 
-                <div class="col">
-             
+                <div class="col">           
                   <h3>Business</h3>
                   <h2>$697</h2>
                   <p>billed yearly</p>
@@ -51,7 +50,9 @@
               <thead>
                 <tr></tr>
                   <th>
+
                     <i
+                      id="chevron"
                       class="bi bi-chevron-down"
                       data-bs-toggle="collapse"
                       data-bs-target="#demo1"
@@ -71,37 +72,37 @@
               <tbody id="demo1" class="accordion-collapse collapse show" data-bs-parent="#accordionTable" >
                 <tr>
                   <td>Number of sites</td>
-                  <td>1</td>
-                  <td>5</td>
-                  <td>15</td>
+                  <td class="basic">1</td>
+                  <td class="business">5</td>
+                  <td class="pro">15</td>
                 </tr>
 
                 <tr>
                   <td>Media manager</td>
-                  <td><i class="bi bi-check2"></i></td>
-                  <td><i class="bi bi-check2"></i></td>
-                  <td><i class="bi bi-check2"></i></td>
+                  <td class="basic"><i class="bi bi-check2"></i></td>
+                  <td class="business"><i class="bi bi-check2"></i></td>
+                  <td class="pro"><i class="bi bi-check2"></i></td>
                 </tr>
 
                 <tr>
                   <td>3rd party integrations</td>
-                  <td><i class="bi bi-check2"></i></td>
-                  <td><i class="bi bi-check2"></i></td>
-                  <td><i class="bi bi-check2"></i></td>
+                  <td class="basic"><i class="bi bi-check2"></i></td>
+                  <td class="business"><i class="bi bi-check2"></i></td>
+                  <td class="pro"><i class="bi bi-check2"></i></td>
                 </tr>
 
                 <tr>
                   <td>Team members</td>
-                  <td>0</td>
-                  <td>3</td>
-                  <td>10</td>
+                  <td class="basic">0</td>
+                  <td class="business">3</td>
+                  <td class="pro">10</td>
                 </tr>
 
                 <tr>
                   <td>'Powered by' logo</td>
-                  <td><i class="bi bi-check2"></i></td>
-                  <td><i class="bi bi-check2"></i></td>
-                  <td><i class="bi bi-check2"></i></td>
+                  <td class="basic"><i class="bi bi-check2"></i></td>
+                  <td class="business"><i class="bi bi-check2"></i></td>
+                  <td class="pro"><i class="bi bi-check2"></i></td>
                 </tr>
               </tbody>
 
@@ -167,24 +168,28 @@
             </table>
             <!--END OF TABLE 2-->
 
+        <div class="container">
 
+          <div class="col-md-12">
 
             <div class="footer">
               <div class="row align-items-start">
                 <div class="col"></div>
                 <div class="col">
-                  <button type="button" class="btn btn-primary btn-lg">Buy Basic</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-basic">Buy Basic</button>
                 </div>
                 
                 <div class="col">
-                  <button type="button" class="btn btn-secondary btn-lg">Buy Business</button>
+                  <button type="button" class="btn btn-secondary btn-lg btn-business">Buy Business</button>
                 </div>
 
                 <div class="col">
-                  <button type="button" class="btn btn-success btn-lg">Buy Pro</button>
+                  <button type="button" class="btn btn-success btn-lg btn-pro">Buy Pro</button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
 
 
@@ -193,7 +198,8 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="assets/js/popper.min.js"></script> -->
+    <script src="script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
