@@ -1,6 +1,3 @@
-// let bottomBtnBasic = document.querySelector(".footer .row .col .btn-basic");
-// let bottomBtnBusiness = document.querySelector(".footer .row .col .btn-business");
-// let bottomBtnPro = document.querySelector(".footer .row .col .btn-pro");
 let headerBtnBasic = document.querySelector(".header .row .col .btn-basic");
 let headerBtnBusiness = document.querySelector(
   ".header .row .col .btn-business"
@@ -12,11 +9,16 @@ console.log(footerCol[1]);
 console.log(footerCol[2]);
 console.log(footerCol[3]);
 
-// let bottomBtnBasic = document.querySelector(".footer .row .col .btn-basic");
-// let bottomBtnBusiness = document.querySelector(
-//   ".footer .row .col .btn-business"
-// );
-// let bottomBtnPro = document.querySelector(".footer .row .col .btn-pro");
+let table = document.querySelector(".table");
+console.log("TABLE:", table);
+
+let basicInfo = document.querySelector(".basic");
+let businessInfo = document.querySelector(".business");
+let proInfo = document.querySelector(".pro");
+
+console.log("BASICINFO:", basicInfo);
+console.log("BUSINESSINFO:", businessInfo);
+console.log("PROINFO:", proInfo);
 
 console.log(footerCol[0].nextSibling.nextSibling.childNodes[1].classList[3]);
 console.log(footerCol[1].nextSibling.nextSibling.childNodes[1].classList[3]);
@@ -37,33 +39,14 @@ headerBtnBasic.addEventListener("click", function () {
   footerCol[3].style.display = "none";
 
   //REMOVE THE BUSINESS AND PRO TBODIES FROM THE PAGE AND SHOW THE "BASIC" CONTENT
-
-  // tbody {
-  //   width: 100%;
-  //   td {
-  //     width: 50%;
-  //   }
-  //   .business,
-  //   .pro {
-  //     display: none;
-  //   }
-  // }
-
-  console.log("basic");
+  basicInfo.style.display = "block";
+  basicInfo.style.width = "100%";
+  businessInfo.style.display = "none";
+  proInfo.style.display = "none";
 });
 
 headerBtnBusiness.addEventListener("click", function () {
   //REMOVE THE FIRST, SECOND AND FOURTH BOTTOM BUTTONS:
-
-  //&:nth-child(1) {
-  //   display: none;
-  // }
-  // &:nth-child(2) {
-  //   display: none;
-  // }
-  // &:nth-child(4) {
-  //   display: none;
-  // }
 
   footerCol[0].style.display = "none";
   footerCol[1].style.display = "none";
@@ -71,32 +54,16 @@ headerBtnBusiness.addEventListener("click", function () {
   footerCol[3].style.display = "none";
   //REMOVE THE BASIC AND PRO TBODIES FROM THE PAGE AND SHOW THE "BUSINESS" CONTENT
 
-  // tbody {
-  //   width: 100%;
-  //   td {
-  //     width: 50%;
-  //   }
-  //   .basic,
-  //   .pro {
-  //     display: none;
-  //   }
-  // }
+  basicInfo.style.display = "none";
+  businessInfo.style.display = "block";
+  businessInfo.style.width = "100%";
+  proInfo.style.display = "none";
 
   console.log("business");
 });
 
 headerBtnPro.addEventListener("click", function () {
   //REMOVES THE FIRST, SECOND AND THIRD BOTTOM BUTTONS:
-
-  //&:nth-child(1) {
-  //   display: none;
-  // }
-  // &:nth-child(2) {
-  //   display: none;
-  // }
-  // &:nth-child(3) {
-  //   display: none;
-  // }
 
   footerCol[0].style.display = "none";
   footerCol[1].style.display = "none";
@@ -105,16 +72,10 @@ headerBtnPro.addEventListener("click", function () {
 
   //REMOVE THE BASIC AND BUSINESS TBODIES FROM THE PAGE AND SHOW THE "PRO" CONTENT
 
-  // tbody {
-  //   width: 100%;
-  //   td {
-  //     width: 50%;
-  //   }
-  //   .basic,
-  //   .pro {
-  //     display: none;
-  //   }
-  // }
+  basicInfo.style.display = "none";
+  businessInfo.style.display = "none";
+  proInfo.style.display = "block";
+  proInfo.style.width = "100%";
 
   console.log("pro");
 });
