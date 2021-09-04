@@ -11146,6 +11146,13 @@ textarea.form-control-lg {
     display: none;
   }
 
+  .container .footer .row .col {
+    width: 100%;
+    display: block;
+  }
+  .container .footer .row .col .btn {
+    font-size: 1.3rem;
+  }
   .container .footer .row .col:nth-child(1) {
     display: none;
   }
@@ -11154,13 +11161,6 @@ textarea.form-control-lg {
   }
   .container .footer .row .col:nth-child(4) {
     display: none;
-  }
-  .container .footer .row .col:nth-child(2) {
-    width: 100%;
-    display: block;
-  }
-  .container .footer .row .col:nth-child(2) .btn {
-    font-size: 1.3rem;
   }
 }
 @media (max-width: 575.98px) {
