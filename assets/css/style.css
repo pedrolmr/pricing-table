@@ -55686,7 +55686,7 @@ textarea.form-control-lg {
   color: #b9d54a;
 }
 .container .table tbody tr:last-child td:first-child {
-  border: 3px solid purple;
+  border-bottom: none;
 }
 
 /*!
