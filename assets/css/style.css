@@ -55658,12 +55658,17 @@ textarea.form-control-lg {
 .container .table tbody {
   border: 1px solid black;
   transition: 0s;
+  width: 100%;
+}
+.container .table tbody tr {
+  width: 100%;
 }
 .container .table tbody tr td:first-child {
   padding-left: 50px;
   text-align: left;
 }
 .container .table tbody tr td {
+  flex: 1;
   border: 1px solid #ececec;
   text-align: center;
   padding: 10px;
@@ -66860,6 +66865,16 @@ body {
 }
 body .container {
   padding: 0;
+}
+
+.show-on-mobile {
+  display: block;
+  background-color: green;
+  width: 500%;
+}
+
+.remove-on-mobile {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
