@@ -183,7 +183,8 @@ function handleMobileChange(e) {
         basicInfo[i].style.display = "";
         // basicInfo[i].style.border = "3px solid red";
         //set basicInfo to a row
-        basicInfo[i].style.width = "50%";
+        basicInfo[i].style.width = "";
+        // basicInfo[i].style.width = "50%";
 
         // basicInfo[i].style.width = "100%";
         // console.log("BASIC INFO:", basicInfo[i]);
@@ -193,7 +194,8 @@ function handleMobileChange(e) {
     for (let j = 0; j < businessInfo.length; j++) {
       if (businessInfo[j].classList[0] == "business") {
         businessInfo[j].style.display = "";
-        businessInfo[j].style.width = "50%";
+        businessInfo[j].style.width = "";
+        // businessInfo[j].style.width = "50%";
         // businessInfo[j].style.border = "3px solid purple";
       }
     }
@@ -201,7 +203,8 @@ function handleMobileChange(e) {
     for (let k = 0; k < proInfo.length; k++) {
       if (proInfo[k].classList[0] == "pro") {
         proInfo[k].style.display = "";
-        proInfo[k].style.width = "50%";
+        proInfo[k].style.width = "";
+        // proInfo[k].style.width = "50%";
         // proInfo[k].style.border = "3px solid yellow";
       }
     }
