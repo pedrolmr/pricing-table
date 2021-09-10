@@ -9,6 +9,7 @@
       padding: 20px;
       tr {
         border: 1px solid #ececec;
+        // border: 1px solid red;
         th:first-child {
           padding-left: 20px;
           text-align: left;
@@ -74,6 +75,13 @@
           i {
             font-size: 25px;
             color: #b9d54a;
+          }
+        }
+        &:last-child {
+          td {
+            &:first-child {
+              border-bottom: none;
+            }
           }
         }
       }
