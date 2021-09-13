@@ -4,10 +4,17 @@
 @include media-breakpoint-down(md) {
   .header {
     .row {
+      //   border: 2px solid red;
       .col {
         padding: 0;
         .btn {
           width: 100%;
+        }
+        &:nth-child(3) {
+          &::before {
+            max-width: 138px;
+            // background-color: red;
+          }
         }
       }
     }
@@ -17,7 +24,7 @@
       padding: 0;
       .btn {
         width: 100%;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
       }
     }
   }
@@ -30,6 +37,7 @@
       .col {
         .btn {
           font-size: 1.3rem;
+          box-sizing: border-box;
         }
 
         &:nth-child(3)::before {

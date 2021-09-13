@@ -129,7 +129,7 @@ const showPro = () => {
   console.log("pro");
 };
 
-const mediaQuery = window.matchMedia("(max-width: 700px)");
+const mediaQuery = window.matchMedia("(max-width: 660px)");
 
 function handleMobileChange(e) {
   if (e.matches) {

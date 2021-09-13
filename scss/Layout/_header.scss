@@ -5,25 +5,29 @@
 .header {
   .row {
     margin: 0 1px;
-    .col:first-child {
-      border: none;
-    }
-    .col:nth-child(3):before {
-      content: "BEST VALUE";
-      position: absolute;
-      // width: 326px;
-      // max-width: 17%;
-      width: 330px;
-      max-width: 22%;
-      // min-width: 22.5%;
-      // min-width: 133.281px;
-      top: 24px;
-      border: 1px solid $lemon;
-      background-color: $lemon;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: $white;
+    .col {
+      &:first-child {
+        border: none;
+      }
+      &:nth-child(3) {
+        &::before {
+          content: "BEST VALUE";
+          position: absolute;
+          // width: 326px;
+          // max-width: 17%;
+          width: 330px;
+          max-width: 22%;
+          // min-width: 22.5%;
+          // min-width: 133.281px;
+          top: 24px;
+          border: 1px solid $lemon;
+          background-color: $lemon;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $white;
+        }
+      }
     }
 
     // .col:nth-child(3) {
