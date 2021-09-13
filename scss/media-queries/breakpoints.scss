@@ -2,6 +2,12 @@
 @import "../abstracts/mixins";
 
 //fixes button size and font size
+
+@include media-breakpoint-up(md) {
+  .container {
+    margin: 0;
+  }
+}
 @include media-breakpoint-down(md) {
   .header {
     .row {
@@ -57,18 +63,24 @@
   }
 
   //   MAKE THE FOOTER COLS DISAPPEAR ON MOBILE EXCEPT FOR THE SECOND COLUMN
-  .container .footer .row .col {
-    width: 100%;
-    display: block;
-    &:nth-child(1) {
-      display: none;
+
+  .footer {
+    .row {
+      .col {
+        width: 100%;
+        display: block;
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(3) {
+          display: none;
+        }
+        &:nth-child(4) {
+          display: none;
+        }
+      }
     }
-    &:nth-child(3) {
-      display: none;
-    }
-    &:nth-child(4) {
-      display: none;
-    }
+    // }
   }
 }
 

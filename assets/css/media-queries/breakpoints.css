@@ -22225,6 +22225,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (min-width: 759px) {
+  .container {
+    margin: 0;
+  }
+}
 @media (max-width: 758.98px) {
   .header .row .col {
     padding: 0;
@@ -22265,17 +22270,17 @@ textarea.form-control-lg {
     display: none;
   }
 
-  .container .footer .row .col {
+  .footer .row .col {
     width: 100%;
     display: block;
   }
-  .container .footer .row .col:nth-child(1) {
+  .footer .row .col:nth-child(1) {
     display: none;
   }
-  .container .footer .row .col:nth-child(3) {
+  .footer .row .col:nth-child(3) {
     display: none;
   }
-  .container .footer .row .col:nth-child(4) {
+  .footer .row .col:nth-child(4) {
     display: none;
   }
 }
