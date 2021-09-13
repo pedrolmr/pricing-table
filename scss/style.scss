@@ -4,6 +4,9 @@
 @use "abstracts/variables";
 @use "abstracts/mixins";
 
+//base
+@use "base/reset";
+
 //components
 @use "components/buttons";
 

@@ -47,14 +47,15 @@
         // flex: 1;
         // border: 2px solid red;
         width: 100%;
-        &:last-child {
-          // border: 3px solid pink;
-          .basic,
-          .business,
-          .pro {
-            border-bottom: none;
-          }
-        }
+        // &:last-child {
+        //   // border: 3px solid pink;
+        //   .basic,
+        //   .business,
+        //   .pro {
+        //     // border-bottom: none;
+        //     border: 3px solid green;
+        //   }
+        // }
         td:first-child {
           // flex: 1;
           padding-left: 50px;
@@ -77,14 +78,28 @@
             color: #b9d54a;
           }
         }
-        &:last-child {
-          td {
-            &:first-child {
-              border-bottom: none;
-            }
-          }
-        }
+        // &:last-child {
+        //   td {
+        //     &:first-child {
+        //       border: 3px solid pink;
+        //       // border-bottom: none;
+        //     }
+        //   }
+        // }
       }
     }
   }
 }
+//tbody tr:last-child {
+// border: 3px solid pink;
+//.basic,
+//.business,
+//.pro {
+// border-bottom: none;
+//border: 3px solid green;
+//}
+//}
+
+//tbody tr:last-child td:first-child {
+//border: 3px solid pink;
+//}

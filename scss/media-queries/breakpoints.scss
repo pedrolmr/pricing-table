@@ -91,6 +91,26 @@
         width: 50%;
         // width: 100%;
       }
+      tr {
+        &:last-child {
+          //   border: 3px solid pink;
+          .basic,
+          .business,
+          .pro {
+            border-bottom: none;
+            // border: 3px solid green;
+          }
+        }
+
+        &:last-child {
+          td {
+            &:first-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+
       .business,
       .pro {
         // visibility: hidden;
@@ -99,3 +119,17 @@
     }
   }
 }
+
+// tbody tr:last-child {
+//   border: 3px solid pink;
+//   .basic,
+//   .business,
+//   .pro {
+//     border-bottom: none;
+//     border: 3px solid green;
+//   }
+// }
+
+//tbody tr:last-child td:first-child {
+//border: 3px solid pink;
+//}
