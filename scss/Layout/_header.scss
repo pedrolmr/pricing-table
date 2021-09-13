@@ -1,6 +1,7 @@
 @import "../custom";
 
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .header {
   .row {
@@ -13,12 +14,8 @@
         &::before {
           content: "BEST VALUE";
           position: absolute;
-          // width: 326px;
-          // max-width: 17%;
           width: 330px;
           max-width: 22%;
-          // min-width: 22.5%;
-          // min-width: 133.281px;
           top: 24px;
           border: 1px solid $lemon;
           background-color: $lemon;
@@ -29,13 +26,6 @@
         }
       }
     }
-
-    // .col:nth-child(3) {
-    //   .cta {
-    //     border: 2px solid $lemon;
-    //     width: 100%;
-    //   }
-    // }
     .col {
       display: flex;
       flex-direction: column;
@@ -60,9 +50,9 @@
         margin-bottom: 40px;
       }
       button {
+        @include button(50%, 1.25rem);
         font-weight: bold;
         color: $white;
-        width: 50%;
       }
     }
   }

@@ -4,12 +4,6 @@
 @use "abstracts/variables";
 @use "abstracts/mixins";
 
-//base
-@use "base/reset";
-
-//components
-@use "components/buttons";
-
 //layout
 @use "layout/footer";
 @use "layout/header";

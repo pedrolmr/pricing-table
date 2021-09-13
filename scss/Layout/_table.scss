@@ -9,14 +9,12 @@
       padding: 20px;
       tr {
         border: 1px solid #ececec;
-        // border: 1px solid red;
         th:first-child {
           padding-left: 20px;
           text-align: left;
           .bi {
             &-chevron-down {
               margin-right: 15px;
-              // overflow: hidden;
               transition-duration: 0.8s;
               transition-property: transform;
             }
@@ -31,75 +29,32 @@
           width: 20%;
           padding: 10px;
           text-align: center;
-          // border: 1px solid #ececec;
           border: none;
         }
       }
     }
 
     tbody {
-      // border: 1px solid black;
       transition: 0s;
       width: 100%;
       tr {
-        // display: flex;
-        // flex-direction: row;
-        // flex: 1;
-        // border: 2px solid red;
         width: 100%;
-        // &:last-child {
-        //   // border: 3px solid pink;
-        //   .basic,
-        //   .business,
-        //   .pro {
-        //     // border-bottom: none;
-        //     border: 3px solid green;
-        //   }
-        // }
         td:first-child {
-          // flex: 1;
           padding-left: 50px;
           text-align: left;
         }
-        // td:last-child {
-        //   // flex: 1;
-        //   // border: none;
-        //   border-bottom: none;
-        // }
 
         td {
           flex: 1;
           border: 1px solid #ececec;
           text-align: center;
           padding: 10px;
-          // width: 50%;
           i {
             font-size: 25px;
             color: #b9d54a;
           }
         }
-        // &:last-child {
-        //   td {
-        //     &:first-child {
-        //       border: 3px solid pink;
-        //       // border-bottom: none;
-        //     }
-        //   }
-        // }
       }
     }
   }
 }
-//tbody tr:last-child {
-// border: 3px solid pink;
-//.basic,
-//.business,
-//.pro {
-// border-bottom: none;
-//border: 3px solid green;
-//}
-//}
-
-//tbody tr:last-child td:first-child {
-//border: 3px solid pink;
-//}

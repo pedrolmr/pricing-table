@@ -24,29 +24,19 @@ const showBasic = () => {
   for (let i = 0; i < basicInfo.length; i++) {
     if (basicInfo[i].classList[0] == "basic") {
       basicInfo[i].style.display = "block";
-      // basicInfo[i].style.visibility = "visible";
-      // basicInfo[i].classList.add("show-on-mobile");
-
-      // basicInfo[i].className += " show-on-mobile";
       basicInfo[i].style.width = "100%";
-
-      // basicInfo[i].style.width = "100%";
-
-      console.log("BASIC INFO:", basicInfo[i]);
     }
   }
 
   for (let j = 0; j < businessInfo.length; j++) {
     if (businessInfo[j].classList[0] == "business") {
       businessInfo[j].style.display = "none";
-      // businessInfo[j].style.visibility = "hidden";
     }
   }
 
   for (let k = 0; k < proInfo.length; k++) {
     if (proInfo[k].classList[0] == "pro") {
       proInfo[k].style.display = "none";
-      // proInfo[k].style.visibility = "hidden";
     }
   }
 };
@@ -62,31 +52,21 @@ const showBusiness = () => {
   for (let i = 0; i < basicInfo.length; i++) {
     if (basicInfo[i].classList[0] == "basic") {
       basicInfo[i].style.display = "none";
-      // basicInfo[i].style.visibility = "hidden";
     }
   }
 
   for (let j = 0; j < businessInfo.length; j++) {
     if (businessInfo[j].classList[0] == "business") {
       businessInfo[j].style.display = "block";
-      // businessInfo[j].style.visibility = "visible";
-      // businessInfo[j].classList.add("show-on-mobile");
-      // businessInfo[j].className += " show-on-mobile";
       businessInfo[j].style.width = "100%";
-
-      // businessInfo[j].style.width = "100%";
-      console.log("BUSINESS INFO:", businessInfo[j]);
     }
   }
 
   for (let k = 0; k < proInfo.length; k++) {
     if (proInfo[k].classList[0] == "pro") {
       proInfo[k].style.display = "none";
-      // proInfo[k].style.visibility = "hidden";
     }
   }
-
-  console.log("business");
 };
 
 const showPro = () => {
@@ -101,32 +81,21 @@ const showPro = () => {
   for (let i = 0; i < basicInfo.length; i++) {
     if (basicInfo[i].classList[0] == "basic") {
       basicInfo[i].style.display = "none";
-      // basicInfo[i].style.visibility = "hidden";
     }
   }
 
   for (let j = 0; j < businessInfo.length; j++) {
     if (businessInfo[j].classList[0] == "business") {
       businessInfo[j].style.display = "none";
-      // businessInfo[j].style.visibility = "hidden";
     }
   }
 
   for (let k = 0; k < proInfo.length; k++) {
     if (proInfo[k].classList[0] == "pro") {
       proInfo[k].style.display = "block";
-      // proInfo[k].style.visibility = "hidden";
-      // proInfo[k].classList.add("show-on-mobile");
-      // proInfo[k].className += " show-on-mobile";
       proInfo[k].style.width = "100%";
-
-      // proInfo[k].style.width = "100%";
-
-      console.log("PRO INFO:", proInfo[k]);
     }
   }
-
-  console.log("pro");
 };
 
 const mediaQuery = window.matchMedia("(max-width: 660px)");
@@ -141,29 +110,29 @@ function handleMobileChange(e) {
     for (let i = 0; i < basicInfo.length; i++) {
       if (basicInfo[i].classList[0] == "basic") {
         basicInfo[i].style.display = "block";
-        // basicInfo[i].style.visibility = "visible";
         basicInfo[i].style.width = "100%";
-        // console.log("BASIC INFO:", basicInfo[i]);
       }
     }
 
     for (let j = 0; j < businessInfo.length; j++) {
       if (businessInfo[j].classList[0] == "business") {
         businessInfo[j].style.display = "none";
-        // businessInfo[j].style.visibility = "hidden";
       }
     }
 
     for (let k = 0; k < proInfo.length; k++) {
       if (proInfo[k].classList[0] == "pro") {
         proInfo[k].style.display = "none";
-        // proInfo[k].style.visibility = "hidden";
       }
     }
 
     headerBtnBasic.addEventListener("click", showBasic);
     headerBtnBusiness.addEventListener("click", showBusiness);
     headerBtnPro.addEventListener("click", showPro);
+
+    // headerBtnBasic.innerHTML = "Basic";
+    // headerBtnBusiness.innerHTML = "Business";
+    // headerBtnPro.innerHTML = "Pro";
   } else {
     footerCol[0].style.display = "flex";
     footerCol[1].style.display = "flex";
@@ -182,20 +151,10 @@ function handleMobileChange(e) {
     footerCol[3].style.justifyContent = "center";
     footerCol[3].style.alignItems = "center";
 
-    console.log("basic info:", basicInfo);
-    console.log("business info:", businessInfo);
-    console.log("pro info:", proInfo);
-
     for (let i = 0; i < basicInfo.length; i++) {
       if (basicInfo[i].classList[0] == "basic") {
         basicInfo[i].style.display = "";
-        // basicInfo[i].style.border = "3px solid red";
-        //set basicInfo to a row
         basicInfo[i].style.width = "";
-        // basicInfo[i].style.width = "50%";
-
-        // basicInfo[i].style.width = "100%";
-        // console.log("BASIC INFO:", basicInfo[i]);
       }
     }
 
@@ -203,8 +162,6 @@ function handleMobileChange(e) {
       if (businessInfo[j].classList[0] == "business") {
         businessInfo[j].style.display = "";
         businessInfo[j].style.width = "";
-        // businessInfo[j].style.width = "50%";
-        // businessInfo[j].style.border = "3px solid purple";
       }
     }
 
@@ -212,8 +169,6 @@ function handleMobileChange(e) {
       if (proInfo[k].classList[0] == "pro") {
         proInfo[k].style.display = "";
         proInfo[k].style.width = "";
-        // proInfo[k].style.width = "50%";
-        // proInfo[k].style.border = "3px solid yellow";
       }
     }
 

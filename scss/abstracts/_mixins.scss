@@ -1,1 +1,6 @@
 @import "../custom";
+
+@mixin button($width: 50%, $font-size) {
+  width: $width;
+  font-size: $font-size;
+}
